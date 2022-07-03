@@ -20,7 +20,7 @@ export default defineConfig({
         } else if (format === 'es') {
           return 'index.js';
         } else {
-          return 'index.js';
+          return 'index.umd.js';
         }
       }
     },
@@ -29,9 +29,7 @@ export default defineConfig({
       output: {
         globals: {
           vue: 'Vue'
-        },
-        dir: 'dist',
-        sourcemap: true,
+        }
       }
     },
     watch: {

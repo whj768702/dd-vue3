@@ -1,5 +1,5 @@
 <script lang="ts" setup>
-import { inject } from 'vue';
+import { inject, defineProps } from 'vue';
 
 const props = defineProps<{ msg: string }>();
 const defaultMsg: string = inject('msg') as string;
