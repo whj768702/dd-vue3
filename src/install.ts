@@ -1,11 +1,9 @@
-import { App } from 'vue';
-import Hello from './components/hello.vue';
+import type { App } from 'vue';
+import { Hello } from './components';
 
-const install = (app: App) => {
+const install = (app: App, options: { msg: string }) => {
   app.component('dd-hello', Hello);
+  app.provide('msg', options.msg);
 }
 
 export default { install };
-
-let a = 10;
-export { a }

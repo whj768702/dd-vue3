@@ -20,7 +20,7 @@
     /* Create source map files for emitted JavaScript files. */
     "sourceMap": true,
     /* Specify an output folder for all emitted files. */
-    "outDir": "./lib",
+    "outDir": "lib",
     /* Emit additional JavaScript to ease support for importing CommonJS modules.
        This enables `allowSyntheticDefaultImports` for type compatibility. */
     "esModuleInterop": true,
@@ -32,13 +32,11 @@
     "skipLibCheck": true
   },
   "include": [
+    "src/**/*.vue",
     "src/**/*.ts",
-    "src/**/*.d.ts",
-    "src/**/*.tsx",
-    "src/**/*.vue"
   ],
   "exclude": [
-    "**/node_modules",
+    "**/node_modules"
   ],
   "references": [{
     "path": "./tsconfig.node.json"

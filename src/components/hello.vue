@@ -1,11 +1,15 @@
-<script setup lang="ts">
-import { ref } from 'vue'
+<script lang="ts" setup>
+import { inject } from 'vue';
 
-defineProps<{ msg: string }>()
+const props = defineProps<{ msg: string }>();
+const defaultMsg: string = inject('msg') as string;
 
-const count = ref(0)
+const msg = props.msg ?? defaultMsg;
+
 </script>
 
 <template>
-  <div>{{ msg }}}</div>
+  <div>
+    here is hello msg: {{ msg }}
+  </div>
 </template>

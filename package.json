@@ -1,11 +1,19 @@
 {
   "name": "dd-vue3",
-  "private": true,
-  "version": "0.0.0",
+  "version": "0.0.1",
+  "type": "module",
+  "exports": {
+    ".":  "./lib/dd-vue3.js"
+  },
+  "browser": {
+  },
+  "types": "./lib/install.d.ts",
+  "license": "MIT",
+  "files": ["lib"],
   "scripts": {
     "dev": "vite",
-    "build": "vue-tsc --noEmit && vite build",
-    "build:watch": "vue-tsc --noEmit && vite build --watch",
+    "build": "vue-tsc --emitDeclarationOnly  && vite build",
+    "build:watch": "vue-tsc --emitDeclarationOnly && vite build --watch",
     "preview": "vite preview"
   },
   "dependencies": {
@@ -15,6 +23,7 @@
     "@rollup/plugin-typescript": "^8.3.3",
     "@vitejs/plugin-vue": "^2.3.3",
     "rollup-plugin-clear": "^2.0.7",
+    "rollup-plugin-typescript2": "^0.32.1",
     "tslib": "^2.4.0",
     "typescript": "^4.5.4",
     "vite": "^2.9.9",
