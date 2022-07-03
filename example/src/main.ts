@@ -4,7 +4,7 @@ import router from './router'
 import store from './store'
 
 import ddVue3 from '../../src/DdVue3';
-// import ddVue3 from 'dd-vue3';
+// import ddVue3 from 'dd-vue3'
 
 const app = createApp(App);
 

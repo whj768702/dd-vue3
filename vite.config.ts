@@ -14,7 +14,15 @@ export default defineConfig({
       entry: 'src/DdVue3.ts',
       name: 'DdVue3',
       formats: ['cjs', 'es', 'umd'],
-      fileName: format => `DdVue3.${format}.js`,
+      fileName: format => {
+        if (format === 'cjs') {
+          return 'index.cjs';
+        } else if (format === 'es') {
+          return 'index.js';
+        } else {
+          return 'index.js';
+        }
+      }
     },
     rollupOptions: {
       external: ['vue'],
@@ -22,7 +30,7 @@ export default defineConfig({
         globals: {
           vue: 'Vue'
         },
-        dir: 'lib',
+        dir: 'dist',
         sourcemap: true,
       }
     },
@@ -43,7 +51,7 @@ export default defineConfig({
     //  }
     // }),
     clear({
-      targets: 'lib',
+      targets: ['dist/*'],
     })
   ]
 })

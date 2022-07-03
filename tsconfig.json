@@ -20,7 +20,7 @@
     /* Create source map files for emitted JavaScript files. */
     "sourceMap": true,
     /* Specify an output folder for all emitted files. */
-    "outDir": "lib",
+    "outDir": "dist",
     /* Emit additional JavaScript to ease support for importing CommonJS modules.
        This enables `allowSyntheticDefaultImports` for type compatibility. */
     "esModuleInterop": true,
