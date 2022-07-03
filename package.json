@@ -1,0 +1,23 @@
+{
+  "name": "dd-vue3",
+  "private": true,
+  "version": "0.0.0",
+  "scripts": {
+    "dev": "vite",
+    "build": "vue-tsc --noEmit && vite build",
+    "build:watch": "vue-tsc --noEmit && vite build --watch",
+    "preview": "vite preview"
+  },
+  "dependencies": {
+    "vue": "^3.2.25"
+  },
+  "devDependencies": {
+    "@rollup/plugin-typescript": "^8.3.3",
+    "@vitejs/plugin-vue": "^2.3.3",
+    "rollup-plugin-clear": "^2.0.7",
+    "tslib": "^2.4.0",
+    "typescript": "^4.5.4",
+    "vite": "^2.9.9",
+    "vue-tsc": "^0.38.2"
+  }
+}
