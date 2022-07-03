@@ -13,8 +13,7 @@
     "sourceMap": true,
     "baseUrl": ".",
     "types": [
-      "webpack-env",
-      "../lib/components/hello.vue.d.ts"
+      "webpack-env"
     ],
     "paths": {
       "@/*": [
@@ -28,6 +27,9 @@
       "scripthost"
     ]
   },
+  "files": [
+    "node_modules/dd-vue3/dist/**/*.d.ts"
+  ],
   "include": [
     "src/**/*.ts",
     "src/**/*.tsx",

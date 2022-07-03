@@ -1,5 +1,5 @@
 import type { App } from 'vue';
-import { Hello } from './components';
+import { Hello } from './components/index';
 
 const install = (app: App, options: { msg: string }) => {
   app.component('dd-hello', Hello);

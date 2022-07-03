@@ -3,6 +3,7 @@ import vue from '@vitejs/plugin-vue';
 import typescript from '@rollup/plugin-typescript';
 import clear from 'rollup-plugin-clear';
 // import typescript2 from 'rollup-plugin-typescript2';
+import dts from 'vite-plugin-dts';
 
 const desc = '.runtime';
 
@@ -37,16 +38,20 @@ export default defineConfig({
     }
   },
   plugins: [
+    dts(),
     vue(),
     typescript({ tsconfig: './tsconfig.json' }),
     // typescript2({
-    //  tsconfigOverride: {
-    //    compilerOptions: {
-    //      declaration: true,
-    //      declarationMap: true,
-    //    },
-    //    exclude: ['vite.config.ts']
-    //  }
+    // check: false,
+    // include: ['./src/components/*.vue'],
+    // tsconfigOverride: {
+    // compilerOptions: {
+    // sourceMap: true,
+    // declaration: true,
+    // declarationMap: true,
+    // },
+    // exclude: ['vite.config.ts']
+    // }
     // }),
     clear({
       targets: ['dist/*'],

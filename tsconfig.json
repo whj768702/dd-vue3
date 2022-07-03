@@ -27,7 +27,7 @@
     /* Ensure that casing is correct in imports. */
     "forceConsistentCasingInFileNames": true,
     /* Enable all strict type-checking options. */
-    "strict": true,
+    "strict": false,
     /* Skip type checking all .d.ts files. */
     "skipLibCheck": true
   },
@@ -36,7 +36,7 @@
     "src/**/*.ts",
   ],
   "exclude": [
-    "**/node_modules"
+    "vite.config.ts"
   ],
   "references": [{
     "path": "./tsconfig.node.json"

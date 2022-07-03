@@ -5,7 +5,9 @@
     <div>second</div>
     <dd-hello :msg="a" />
     <div>third</div>
-    <dd-hello />
+    <dd-hello></dd-hello>
+    <div>fourth</div>
+    <special-uploader></special-uploader>
   </div>
 </template>
 
@@ -16,7 +18,7 @@ import HelloWorld from '@/components/HelloWorld.vue'; // @ is an alias to /src
 export default defineComponent({
   name: 'HomeView',
   components: {
-    HelloWorld,
+    HelloWorld
   },
   data() {
     return {
