@@ -1,15 +1,16 @@
 {
   "name": "dd-vue3",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "type": "module",
   "exports": {
-    ".":  "./lib/dd-vue3.js"
+    ".": "./lib/dd-vue3.js"
   },
-  "browser": {
-  },
+  "browser": {},
   "types": "./lib/install.d.ts",
   "license": "MIT",
-  "files": ["lib"],
+  "files": [
+    "lib"
+  ],
   "scripts": {
     "dev": "vite",
     "build": "vue-tsc --emitDeclarationOnly  && vite build",
