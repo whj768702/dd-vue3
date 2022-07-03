@@ -11,19 +11,10 @@
   </div>
 </template>
 
-<script lang="ts">
-import { defineComponent } from 'vue';
+<script lang="ts" setup>
 import HelloWorld from '@/components/HelloWorld.vue'; // @ is an alias to /src
+import { SpecialUploader } from 'viewer-img-vue';
+import { Hello } from 'dd-vue3'
 
-export default defineComponent({
-  name: 'HomeView',
-  components: {
-    HelloWorld
-  },
-  data() {
-    return {
-      a: 100
-    }
-  }
-});
+let a = 100;
 </script>

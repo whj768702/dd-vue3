@@ -28,7 +28,9 @@
     ]
   },
   "files": [
-    "node_modules/dd-vue3/dist/**/*.d.ts"
+    "node_modules/dd-vue3/dist/**/*.d.ts",
+    "node_modules/dd-vue3/dist/components/hello.vue.d.ts",
+    "node_modules/viewer-img-vue/dist/components/*.vue.d.ts"
   ],
   "include": [
     "src/**/*.ts",
