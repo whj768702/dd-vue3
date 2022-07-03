@@ -3,13 +3,13 @@
   "version": "0.0.3",
   "type": "module",
   "exports": {
-    ".": "./lib/dd-vue3.js"
+    ".": "./dist/index.js"
   },
   "browser": {},
-  "types": "./lib/install.d.ts",
+  "types": "./dist/DdVue3.d.ts",
   "license": "MIT",
   "files": [
-    "lib"
+    "dist"
   ],
   "scripts": {
     "dev": "vite",
