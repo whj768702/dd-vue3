@@ -7,3 +7,4 @@ const install = (app: App, options: { msg: string }) => {
 }
 
 export default { install };
+export { Hello }

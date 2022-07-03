@@ -11,10 +11,10 @@ export default defineConfig({
   build: {
     cssCodeSplit: false,
     lib: {
-      entry: 'src/install.ts',
-      name: 'dd-vue3',
+      entry: 'src/DdVue3.ts',
+      name: 'DdVue3',
       formats: ['cjs', 'es', 'umd'],
-      fileName: format => `dd-vue3.${format}.js`,
+      fileName: format => `DdVue3.${format}.js`,
     },
     rollupOptions: {
       external: ['vue'],
