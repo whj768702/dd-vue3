@@ -13,7 +13,7 @@
   ],
   "scripts": {
     "dev": "vite",
-    "build": "vue-tsc && vite build",
+    "build": "vue-tsc --noEmit && vite build",
     "build:watch": "vue-tsc --noEmit && vite build --watch",
     "preview": "vite preview"
   },
