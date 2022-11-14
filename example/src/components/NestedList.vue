@@ -1,5 +1,5 @@
 <template lang="html">
-  <dd-draggable class="panel__body--item"
+  <vddl-draggable class="panel__body--item"
     :draggable="item"
     :index="index"
     :disable-if="disable"
@@ -10,7 +10,7 @@
       <div class="panel__heading">
         <h3>Container {{item.id}}</h3>
       </div>
-      <dd-list class="panel__body"
+      <vddl-list class="panel__body"
         :list="item.columns"
         :disable-if="disable"
         :external-sources="true">
@@ -22,17 +22,17 @@
           :selected-item="selectedItem"
           :disable="disable">
         </NestedList>
-      </dd-list>
+      </vddl-list>
     </div>
     <p v-else>
       {{item.type}} {{item.id}}
     </p>
-  </dd-draggable>
+  </vddl-draggable>
 </template>
 
 <script>
-import ddList from '../../../src/components/dd-list.vue';
-import ddDraggable from '../../../src/components/dd-draggable.vue';
+import ddList from '../../../src/components/vddl-list.vue';
+import ddDraggable from '../../../src/components/vddl-draggable.vue';
 
 export default {
   name: 'NestedList',

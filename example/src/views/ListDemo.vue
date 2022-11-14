@@ -1,7 +1,7 @@
 <script lang="ts" setup>
 import {reactive} from 'vue';
-import ddList from '../../../src/components/dd-list.vue';
-import ddDraggable from '../../../src/components/dd-draggable.vue';
+import ddList from '../../../src/components/vddl-list.vue';
+import ddDraggable from '../../../src/components/vddl-draggable.vue';
 
 type Container = {
   id: number;
@@ -41,14 +41,14 @@ for(let i = 0; i < 3; i++) {
     <div>
       <ddList tag="div" :list="lists[0].container" :horizontal="true" :allowed-types="['itemType']"
                :external-sources="true">
-        <dd-draggable v-for="(item, number) in lists[0].container.list" :key="item.id" class="panel__body--item horizontal-item"
+        <vddl-draggable v-for="(item, number) in lists[0].container.list" :key="item.id" class="panel__body--item horizontal-item"
                         :draggable="item"
                         :type="'itemType'"
                         effect-allowed="copyMove"
                         :index="number"
                         :wrapper="container.list">
           {{item.label}}
-        </dd-draggable >
+        </vddl-draggable >
       </ddList>
     </div>
   </div>

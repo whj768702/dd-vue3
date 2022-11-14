@@ -1,5 +1,5 @@
 <template>
-  <div class="dd-list" :is="tag"
+  <div class="vddl-list" :is="tag"
        ref="$el"
        @dragenter.prevent="handleDragenter"
        @dragover.stop.prevent="handleDragover"

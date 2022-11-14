@@ -1,8 +1,8 @@
 import type { App, Component } from 'vue';
 import { Hello } from './components/index';
 
-import List from './components/dd-list.vue';
-import Draggable from './components/dd-draggable.vue';
+import List from './components/vddl-list.vue';
+import Draggable from './components/vddl-draggable.vue';
 
 
 const install = (app: App, options: { msg: string }) => {
@@ -11,8 +11,8 @@ const install = (app: App, options: { msg: string }) => {
     isDragging: false,
     dragType: '',
   };
-  app.component('dd-draggable', Draggable);
-  app.component('dd-list', List);
+  app.component('vddl-draggable', Draggable);
+  app.component('vddl-list', List);
   app.component('dd-hello', Hello as Component<{ msg: string }>);
   app.provide('msg', options.msg);
 }

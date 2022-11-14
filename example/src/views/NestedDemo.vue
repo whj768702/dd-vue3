@@ -8,7 +8,7 @@
             <h3>Dropzone {{ zone }}</h3>
           </div>
           <div class="panel__body">
-            <dd-list class="panel__body--list"
+            <vddl-list class="panel__body--list"
                      :list="list"
                      :inserted="inserted"
                      effect-allowed="move"
@@ -23,7 +23,7 @@
                           :selected-item="selectedItem"
                           :disable="disable">
               </NestedList>
-            </dd-list>
+            </vddl-list>
           </div>
         </div>
       </div>
@@ -34,19 +34,19 @@
               <h3>New Elements</h3>
             </div>
             <div class="panel__body">
-              <dd-draggable class="button"
+              <vddl-draggable class="button"
                             :draggable="itemMock"
                             :copied="copied"
                             effect-allowed="copy">
                 Add Item
-              </dd-draggable>
+              </vddl-draggable>
               <br>
-              <dd-draggable class="button"
+              <vddl-draggable class="button"
                             :draggable="containerMock"
                             :copied="copied"
                             effect-allowed="copy">
                 Add Container
-              </dd-draggable>
+              </vddl-draggable>
             </div>
           </div>
         </div>
@@ -77,9 +77,9 @@
             <div class="panel__heading">
               <h3>Ashcan</h3>
             </div>
-            <dd-list :list="[]" class="panel__body">
+            <vddl-list :list="[]" class="panel__body">
               <img class="ashcan-logo" src="../assets/ashcan.png" alt="" />
-            </dd-list>
+            </vddl-list>
           </div>
         </div>
       </div>
@@ -89,8 +89,8 @@
 
 <script>
 import VTitle from '../components/title';
-import ddList from '../../../src/components/dd-list.vue';
-import ddDraggable from '../../../src/components/dd-draggable.vue';
+import ddList from '../../../src/components/vddl-list.vue';
+import ddDraggable from '../../../src/components/vddl-draggable.vue';
 import NestedList from '../components/NestedList.vue';
 
 export default {

@@ -7,11 +7,11 @@
           <div class="panel__heading">
             <h3>Dropzone {{co.id}}</h3>
           </div>
-          <dd-list class="panel__body horizontal__container"
+          <vddl-list class="panel__body horizontal__container"
             :list="co.container"
             :allowed-types="['containerType']"
             :external-sources="true">
-            <dd-draggable class="panel"
+            <vddl-draggable class="panel"
               v-for="(container, index) in co.container"
               :key="container.id"
               :draggable="container"
@@ -23,23 +23,23 @@
                 <h3>Container {{container.id}}</h3>
               </div>
               <div class="panel__body">
-                <dd-list class="panel__body--list padding"
+                <vddl-list class="panel__body--list padding"
                   :list="container.list"
                   :horizontal="true"
                   :allowed-types="['itemType']"
                   :external-sources="true">
-                  <dd-draggable v-for="(item, number) in container.list" :key="item.id" class="panel__body--item horizontal-item"
+                  <vddl-draggable v-for="(item, number) in container.list" :key="item.id" class="panel__body--item horizontal-item"
                     :draggable="item"
                     :type="'itemType'"
                     effect-allowed="copyMove"
                     :index="number"
                     :wrapper="container.list">
                     {{item.label}}
-                  </dd-draggable >
-                </dd-list>
+                  </vddl-draggable >
+                </vddl-list>
               </div>
-            </dd-draggable>
-          </dd-list>
+            </vddl-draggable>
+          </vddl-list>
         </div>
       </div>
     </div>
@@ -48,8 +48,8 @@
 
 <script>
 import VTitle from '../components/title';
-import ddList from '../../../src/components/dd-list.vue';
-import ddDraggable from '../../../src/components/dd-draggable.vue';
+import ddList from '../../../src/components/vddl-list.vue';
+import ddDraggable from '../../../src/components/vddl-draggable.vue';
 
 export default {
   data() {

@@ -8,13 +8,13 @@
             <h3>List {{listName}}</h3>
           </div>
           <div class="panel__body">
-            <dd-list class="panel__body--list"
+            <vddl-list class="panel__body--list"
                        :list="list"
                        :inserted="handleInserted"
                        :dragover="handleDragover"
                        :drop="handleDrop"
                        :horizontal="false">
-              <dd-draggable class="panel__body--item" v-for="(item, index) in list" :key="item.id"
+              <vddl-draggable class="panel__body--item" v-for="(item, index) in list" :key="item.id"
                               :draggable="item"
                               :index="index"
                               :wrapper="list"
@@ -27,9 +27,9 @@
                               :moved="handleMoved"
                               v-bind:class="{'selected': selected === item}">
                 {{item.label}}
-              </dd-draggable>
+              </vddl-draggable>
 <!--              <dd-placeholder class="red">Custom placeholder</dd-placeholder>-->
-            </dd-list>
+            </vddl-list>
           </div>
         </div>
       </div>
@@ -38,13 +38,9 @@
 </template>
 
 <script>
-import ddList from '../../../src/components/dd-list.vue';
-import ddDraggable from '../../../src/components/dd-draggable.vue';
+// import ddList from '../../../src/components/vddl-list.vue';
+// import ddDraggable from '../../../src/components/vddl-draggable.vue';
 export default {
-  components: {
-    ddList,
-    ddDraggable
-  },
   data(){
     return {
       "selected": null,
