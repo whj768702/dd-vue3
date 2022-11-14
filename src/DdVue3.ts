@@ -11,8 +11,8 @@ const install = (app: App, options: { msg: string }) => {
     isDragging: false,
     dragType: '',
   };
-  app.component('DDDraggable', Draggable);
-  app.component('DDList', List);
+  app.component('dd-draggable', Draggable);
+  app.component('dd-list', List);
   app.component('dd-hello', Hello as Component<{ msg: string }>);
   app.provide('msg', options.msg);
 }
