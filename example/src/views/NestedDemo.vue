@@ -89,8 +89,6 @@
 
 <script>
 import VTitle from '../components/title';
-import ddList from '../../../src/components/vddl-list.vue';
-import ddDraggable from '../../../src/components/vddl-draggable.vue';
 import NestedList from '../components/NestedList.vue';
 
 export default {
@@ -198,8 +196,6 @@ export default {
   },
   components: {
     VTitle,
-    ddList,
-    ddDraggable,
     NestedList,
   },
 };

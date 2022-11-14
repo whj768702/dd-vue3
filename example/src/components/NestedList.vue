@@ -31,9 +31,6 @@
 </template>
 
 <script>
-import ddList from '../../../src/components/vddl-list.vue';
-import ddDraggable from '../../../src/components/vddl-draggable.vue';
-
 export default {
   name: 'NestedList',
   props: ['item', 'list', 'index', 'selected', 'selectedItem', 'disable'],
@@ -44,10 +41,6 @@ export default {
       }
     }
   },
-  components: {
-    ddList,
-    ddDraggable,
-  }
 };
 </script>
 

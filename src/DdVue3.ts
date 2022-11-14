@@ -18,4 +18,4 @@ const install = (app: App, options: { msg: string }) => {
 }
 
 export default { install };
-export { Hello }
+export { Hello, List, Draggable }

@@ -1,8 +1,4 @@
 <script lang="ts" setup>
-import {reactive} from 'vue';
-import ddList from '../../../src/components/vddl-list.vue';
-import ddDraggable from '../../../src/components/vddl-draggable.vue';
-
 type Container = {
   id: number;
   container: Array<{id:number;list: Array<Item>}>;

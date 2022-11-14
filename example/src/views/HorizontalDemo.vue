@@ -48,8 +48,6 @@
 
 <script>
 import VTitle from '../components/title';
-import ddList from '../../../src/components/vddl-list.vue';
-import ddDraggable from '../../../src/components/vddl-draggable.vue';
 
 export default {
   data() {
@@ -82,8 +80,6 @@ export default {
   methods: {},
   components: {
     VTitle,
-    ddList,
-    ddDraggable
   }
 };
 </script>
