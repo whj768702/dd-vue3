@@ -7,6 +7,8 @@
     <router-link to="/tree">Tree Demo</router-link> |
     <router-link to="/nested">Nested Demo</router-link> |
     <router-link to="/horizontal">Horizontal Demo</router-link> |
+    <router-link to="/handle">Handle Demo</router-link> |
+    <router-link to="/itemTypes">ItemTypes Demo</router-link> |
   </nav>
   <router-view/>
 </template>
