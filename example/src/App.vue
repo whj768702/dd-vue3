@@ -1,12 +1,19 @@
 <template>
   <nav>
     <router-link to="/">Home</router-link> |
-    <router-link to="/about">About</router-link>
+    <router-link to="/about">About</router-link> |
+    <router-link to="/demo">Demo</router-link> |
+    <router-link to="/simple">Simple Demo</router-link> |
+    <router-link to="/tree">Tree Demo</router-link> |
+    <router-link to="/nested">Nested Demo</router-link> |
+    <router-link to="/horizontal">Horizontal Demo</router-link> |
   </nav>
   <router-view/>
 </template>
 
 <style lang="less">
+@import './styles/index.less';
+
 #app {
   font-family: Avenir, Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
