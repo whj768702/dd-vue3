@@ -2,6 +2,8 @@ import type { App, Component } from 'vue';
 import { Hello } from './components/index';
 
 import List from './components/dd-list.vue';
+import Draggable from './components/dd-draggable.vue';
+
 
 const install = (app: App, options: { msg: string }) => {
   app.config.globalProperties.vddlDropEffectWorkaround = {dropEffect: null};
@@ -9,6 +11,8 @@ const install = (app: App, options: { msg: string }) => {
     isDragging: false,
     dragType: '',
   };
+  app.component('DDDraggable', Draggable);
+  app.component('DDList', List);
   app.component('dd-hello', Hello as Component<{ msg: string }>);
   app.provide('msg', options.msg);
 }
